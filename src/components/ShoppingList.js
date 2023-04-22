@@ -10,8 +10,8 @@ function ShoppingList({ items }) {
     setSelectedCategory(value)
   }
 
-  const selectedItems = items.filter(item => item.category == selectedCategory)
-  const listItems = selectedItems.length == 0 ? items : selectedItems
+  const selectedItems = items.filter(item => item.category === selectedCategory)
+  const listItems = selectedItems.length === 0 ? items : selectedItems
 
   return (
     <div className="ShoppingList">
